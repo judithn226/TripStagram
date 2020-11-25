@@ -1,24 +1,18 @@
 import './App.css';
-import {Nav, Navbar} from 'react-bootstrap'
+import SignUp from './Components/signup'
+import {Route, BrowserRouter as Router} from 'react-router-dom'
+import navbar from './Components/header'
 
 function App() {
-  return (
-    <div className="App">
-      <Navbar fixed="top" collapseOnSelect expand="lg" bg="dark" variant="dark">
-        <Navbar.Brand href="#home">Tripstogram</Navbar.Brand>
-        <Navbar.Toggle aria-controls="responsive-navbar-nav" />
-        <Navbar.Collapse id="responsive-navbar-nav">
-          <Nav className="mr-auto">
-          </Nav>
-          <Nav>
-            <Nav.Link href="#">SignUp</Nav.Link>
-            <Nav.Link href="#deets">LogIn</Nav.Link>
-            <Nav.Link eventKey={2} href="#memes">About</Nav.Link>
-          </Nav>
-        </Navbar.Collapse>
-      </Navbar>
-    </div>
-  );
-}
+  return(
+  <Router>
+  <div>
+  <navbar>
+  <Route exact path = "/signup" component={(props)=><SignUp {...props}/>} />
+  </navbar>
+  </div>
+  </Router>
+
+  );}
 
 export default App;
