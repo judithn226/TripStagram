@@ -1,24 +1,23 @@
-import '../App'
-import 'bootstrap/dist/css/bootstrap.min.css';
-import { Nav } from 'react-bootstrap';
+import {NavLink} from 'react-router-dom';
+import '../App.css';
 
-function Navbar() {
-    return (
-        <div className="App">
-          <Navbar fixed="top" collapseOnSelect expand="lg" bg="dark" variant="dark">
-            <Navbar.Brand href="#home">Trippin'</Navbar.Brand>
-            <Navbar.Toggle aria-controls="responsive-navbar-nav" />
-            <Navbar.Collapse id="responsive-navbar-nav">
-              <Nav className="mr-auto">
-              </Nav>
-              <Nav>
-                <Nav.Link href="#signup">SignUp</Nav.Link>
-                <Nav.Link href="#login">LogIn</Nav.Link>
-                <Nav.Link eventKey={2} href="#memes">About</Nav.Link>
-              </Nav>
-            </Navbar.Collapse>
-          </Navbar>
-        </div>
-      );
+function Header() {
+  return (
+    <nav class="navbar navbar-expand-lg navbar-light bg-dark">
+    <a class="navbar-brand" href="/">Trippin'</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+      <div class="navbar-nav">
+      <NavLink activeClassName= "active" to="/">Home</NavLink>
+      <NavLink to="/signup">SignUp</NavLink>
+      <NavLink to="/login">LogIn</NavLink>
+      <NavLink to="/places">Places</NavLink>
+      </div>
+    </div>
+  </nav>
+  );
 }
-export default Navbar;
+
+export default Header;
