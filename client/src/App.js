@@ -1,19 +1,23 @@
-import './App.css';
-import SignUp from './Components/signup'
-import LogIn from './Components/login'
-import {Route, BrowserRouter as Router} from 'react-router-dom'
-import Header from './Components/Header'
+import "./App.css";
+import Header from "./Components/Header";
+import Home from './components/Home';
+import SignUp from "./Components/Signup";
+import LogIn from "./Components/Login";
+
+import { Route, BrowserRouter as Router } from "react-router-dom";
+
 
 function App() {
-  return(
-  <Router>
-  <div>
-  <Header />
-  <Route exact path = "/signup" component={(props)=><SignUp {...props}/>} />
-  <Route exact path = "/login" component={(props)=><LogIn {...props}/>} />
-  </div>
-  </Router>
+  return (
+    <div>
+      <Header />
+      <Route exact path="/" component={Home} />
 
-  );}
+      <Route exact path="/Signup" component={SignUp} />
+
+      <Route exact path="/Login" component={LogIn} />
+    </div>
+  );
+}
 
 export default App;
