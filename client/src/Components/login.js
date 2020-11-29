@@ -1,64 +1,86 @@
-import React, {Component} from 'react'
-import { ButtonInput } from 'react-bootstrap'
-import { Form } from 'react-bootstrap-validation'
+import React from 'react'
 
-export default class LoginForm extends Component {
-
+import ReactFormInputValidation from "react-form-input-validation";
+ 
+class Login extends React.Component {
   constructor(props) {
-    super(props)
+    super(props);
     this.state = {
-      showModal: false,
-      email: '',
-      password: ''
+      fields: {
+        name: "",
+        email: "",
+        phone_number: ""
+      },
+      errors: {}
+    };
+    this.form = new ReactFormInputValidation(this);
+    this.form.useRules({
+        name: "required",
+        email: "required|email",
+        phone_number: "required|numeric|digits_between:10,12",
+        //look at documentation to define other rules used//
+    });
+    this.form.onformsubmit = (fields) => {
+      console.log(fields)
+      // Do you ajax calls here.
     }
-    console.log(props)
   }
-
-  _handleValidSubmit(values) {}
-  _handleInvalidSubmit(errors, values) {}
-
+  // <form onSubmit={this.form.handleSubmit}></form>
   render() {
     return (
-      <div>
-        <div className="account">
-          <div className="container">
-            <div className="page-title">Login</div>
-            <div className="page-desc">Email used at sign up</div>
-            <Form
-              onValidSubmit={this._handleValidSubmit.bind(this)}
-              onInvalidSubmit={this._handleInvalidSubmit.bind(this)}>
-              <ValidatedInput
-                type="text"
-                label="Email"
-                name="email"
-                validate="required,isEmail"
-                errorHelp={{
-                  required: "Please enter your e-mail",
-                  isEmail: "Email is invalid"
-                }}
-              />
-
-              <ValidatedInput
-                type="password"
-                label="Password"
-                name="password"
-                validate="required,isLength:6:60"
-                errorHelp={{
-                  required: "Please specify a password",
-                  isEmail: "Password must be at least 6 characters"
-                }}
-              />
-
-              <ButtonInput
-                type="submit"
-                bsSize="large"
-                bsStyle="primary"
-                value="LOGIN"
-              />
-            </Form>
-          </div>
-        </div>
-      </div>
+      <form onSubmit={this.form.handleSubmit}>
+            <p>
+              <label>
+                Name
+                <input
+                  type="text"
+                  name="name"
+                  onBlur={this.form.handleBlurEvent}
+                  onChange={this.form.handleChangeEvent}
+                  value={this.state.fields.name}
+                />
+              </label>
+              <label className="error">
+                {this.state.errors.name ? this.state.errors.name : ""}
+              </label>
+            </p>
+ 
+            <p>
+              <label>
+                Email
+                <input
+                  type="email"
+                  name="email"
+                  onBlur={this.form.handleBlurEvent}
+                  onChange={this.form.handleChangeEvent}
+                  value={this.state.fields.email}
+                />
+              </label>
+              <label className="error">
+                {this.state.errors.email ? this.state.errors.email : ""}
+              </label>
+            </p>
+ 
+            <p>
+              <label>
+                Phone
+                <input
+                  type="tel"
+                  name="phone_number"
+                  onBlur={this.form.handleBlurEvent}
+                  onChange={this.form.handleChangeEvent}
+                  value={this.state.fields.phone_number}
+                />
+              </label>
+              <label className="error">
+                {this.state.errors.phone_number ? this.state.errors.phone_number : ""}
+              </label>
+            </p>
+            <p>
+              <button type="submit">Submit</button>
+            </p>
+        </form>
     )
   }
 }
+export default Login;

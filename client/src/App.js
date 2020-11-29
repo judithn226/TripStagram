@@ -1,6 +1,6 @@
 import "./App.css";
 import Header from "./Components/Header";
-import Home from './components/Home';
+// import Home from './Components/Home';
 import SignUp from "./Components/Signup";
 import LogIn from "./Components/Login";
 
@@ -11,7 +11,7 @@ function App() {
   return (
     <div>
       <Header />
-      <Route exact path="/" component={Home} />
+      {/* <Route exact path="/" component={Home} /> */ }
 
       <Route exact path="/Signup" component={SignUp} />
 
