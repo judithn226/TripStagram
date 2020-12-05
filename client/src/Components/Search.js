@@ -3,6 +3,7 @@ import { DateRangePicker } from "react-date-range";
 import { Button } from "@material-ui/core";
 import PeopleIcon from "@material-ui/icons/People";
 import { useHistory } from "react-router-dom";
+import axios from "axios";
 
 function Search() {
   const history = useHistory();
@@ -31,5 +32,33 @@ function Search() {
     </div>
   );
 }
+
+
+//This is almost set up. Above you have a function that create a start and end date
+//for your trip and the numbers of guest. If you wrap the axios call below in a 
+//function you would be able to produce the result you want. Just think of a way 
+//to pass these values into this call.
+
+const options = {
+  method: 'GET',
+  url: 'https://airbnb-com.p.rapidapi.com/listing/41785579/price',
+  params: {
+    max_guests: '1',
+    currency: 'USD',
+    check_in: '2021-02-25',
+    check_out: '2021-02-26',
+    locale: 'en-US'
+  },
+  headers: {
+    'x-rapidapi-key': '9f05d26673mshb2c8499547bc2c5p1c9aafjsn197659763efe',
+    'x-rapidapi-host': 'airbnb-com.p.rapidapi.com'
+  }
+};
+
+axios.request(options).then(function (response) {
+	console.log(response.data);
+}).catch(function (error) {
+	console.error(error);
+});
 
 export default Search;
