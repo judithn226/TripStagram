@@ -47,7 +47,9 @@ const options = {
     locale: 'en-US',
     min_price: '0',
     max_price: '5000',
+    //change guests belowe to a variable you are passing in.
     max_guests: '2',
+    //change check_in and checkout date too
     check_in: '2021-02-25',
     radius: '5',
     currency: 'USD',
