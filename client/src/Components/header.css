@@ -1,0 +1,21 @@
+.navbar {
+  background: rgb(150, 108, 53);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  top: 0;
+  z-index: 2;
+}
+
+.navbar-brand {
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  font-style: italic;
+  width: 80px;
+  font-size: 50px;
+}
+.navbar-brand img {
+  width: 120px;
+  height: 40px;
+  float: left;
+  margin-right: 7px;
+}

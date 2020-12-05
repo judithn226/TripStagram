@@ -1,0 +1,20 @@
+h1 {
+  text-align: center;
+}
+
+.banner_search {
+  text-align: center;
+}
+
+Button {
+  color: mediumorchid;
+}
+
+.banner {
+  background-image: image("../Assets/images/BeachBackground.jpg");
+}
+
+.carousel-inner > .item > img {
+  width: 640px;
+  height: 90px;
+}

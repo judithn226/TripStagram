@@ -9,6 +9,8 @@
     "@testing-library/react": "^11.2.2",
     "@testing-library/user-event": "^12.2.2",
     "bootstrap": "^4.5.3",
+    "date-fn": "0.0.2",
+    "date-fns": "^2.16.1",
     "react": "^17.0.1",
     "react-bootstrap": "^1.4.0",
     "react-date-range": "^1.1.3",
