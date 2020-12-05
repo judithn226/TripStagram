@@ -1,7 +1,7 @@
 import React from "react";
-import "./Home.css";
-import Banner from "./Banner";
-import Card from "./Card";
+import "./home.css";
+import Banner from "./banner";
+import Card from "./card";
 import axios from "axios";
 
 function Home() {
