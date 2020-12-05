@@ -1,4 +1,11 @@
+<<<<<<< HEAD
 .home_section{
     display: flex;
     padding: 30px;
 }
+=======
+.home__section {
+  display: flex;
+  padding: 30px;
+}
+>>>>>>> 9ea09910fd28bcac174d16f90f2b8df33ce6619b
