@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { Button } from "@material-ui/core";
-import Search from "./Search";
+import Search from "./search";
 import { useHistory } from "react-router-dom";
 import './Banner.css'
 import TravelBackground from "../Assets/images/BeachBackground.jpg"
