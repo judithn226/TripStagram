@@ -1,4 +1,5 @@
 import React from 'react'
+import "./login.css"
 
 import ReactFormInputValidation from "react-form-input-validation";
  
@@ -31,7 +32,7 @@ class Login extends React.Component {
       <form onSubmit={this.form.handleSubmit}>
             <p>
               <label>
-                Name
+                User Name
                 <input
                   type="text"
                   name="name"
@@ -63,7 +64,7 @@ class Login extends React.Component {
  
             <p>
               <label>
-                Phone
+                Password
                 <input
                   type="tel"
                   name="phone_number"

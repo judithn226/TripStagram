@@ -1,22 +1,52 @@
-import {NavLink} from 'react-router-dom';
-import '../App.css';
+import React from "react";
+import './header.css';
+import logo from "../Assets/images/TrippInlogo.png";
 
 function Header() {
   return (
-    <nav class="navbar navbar-expand-lg navbar-light bg-dark">
-    <a class="navbar-brand" href="/">Trippin'</a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-      <div class="navbar-nav">
-      <NavLink activeClassName= "active" to="/">Home</NavLink>
-      <NavLink to="/signup">SignUp</NavLink>
-      <NavLink to="/login">LogIn</NavLink>
-      <NavLink to="/places">Places</NavLink>
+    <nav className="navbar navbar-expand-lg navbar-dark">
+      <a className="navbar-brand" href="/">
+        {/* <img className="navbar-logo" src={logo} alt=""></img>       */}
+        Trippin'
+      </a>
+      <button
+        className="navbar-toggler"
+        data-toggle="collapse"
+        data-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span className="navbar-toggler-icon" />
+      </button>
+
+      <div className="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul className="navbar-nav mr-auto">
+          <li className="nav-item active">
+            {/* <a className="nav-link" href="/">
+              Home <span className="sr-only">(current)</span>
+            </a> */}
+          </li>
+        </ul>
+        <ul className="navbar-nav">
+        <li className="nav-item active">
+            <a className="nav-link" href="signup">
+              SignUp
+            </a>
+          </li>
+          <li className="nav-item active">
+            <a className="nav-link" href="login">
+              LogIn
+            </a>
+          </li>
+          <li className="nav-item active">
+            <a className="nav-link" href="places">
+              Places
+            </a>
+          </li>
+          </ul>
       </div>
-    </div>
-  </nav>
+    </nav>
   );
 }
 
