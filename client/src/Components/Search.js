@@ -41,16 +41,20 @@ function Search() {
 
 const options = {
   method: 'GET',
-  url: 'https://airbnb-com.p.rapidapi.com/listing/41785579/price',
+  url: 'https://airbnb-com.p.rapidapi.com/listings/nearby/37.788719679657554/-122.40057774847898',
   params: {
-    max_guests: '1',
-    currency: 'USD',
+    offset: '0',
+    locale: 'en-US',
+    min_price: '0',
+    max_price: '5000',
+    max_guests: '2',
     check_in: '2021-02-25',
-    check_out: '2021-02-26',
-    locale: 'en-US'
+    radius: '5',
+    currency: 'USD',
+    check_out: '2021-02-26'
   },
   headers: {
-    'x-rapidapi-key': '9f05d26673mshb2c8499547bc2c5p1c9aafjsn197659763efe',
+    'x-rapidapi-key': 'SIGN-UP-FOR-KEY',
     'x-rapidapi-host': 'airbnb-com.p.rapidapi.com'
   }
 };
