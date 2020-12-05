@@ -1,8 +1,8 @@
 import React, { useState } from "react";
 import { Button } from "@material-ui/core";
-import Search from "./Search";
+import Search from "./search";
 import { useHistory } from "react-router-dom";
-import './Banner.css'
+import './banner.css'
 
 function Banner() {
   const history = useHistory();
