@@ -1,6 +1,9 @@
 import React from 'react'
+<<<<<<< HEAD
+=======
 import "./login.css"
 
+>>>>>>> 38c8ebaff58a370dfe32b084d947e1c8d372a0d6
 import ReactFormInputValidation from "react-form-input-validation";
  
 class Login extends React.Component {
