@@ -1,5 +1,4 @@
 import React from 'react'
-
 import ReactFormInputValidation from "react-form-input-validation";
  
 class Login extends React.Component {
