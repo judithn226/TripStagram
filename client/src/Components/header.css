@@ -1,0 +1,18 @@
+.navbar {
+  background-color: #363b41;
+}
+
+.nav-item {
+  color: blue;
+}
+
+.navbar-brand {
+  color: coral;
+}
+
+a {
+  color: #f00;
+}
+a:hover {
+  color: #0f0;
+}

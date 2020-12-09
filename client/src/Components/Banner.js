@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { Button } from "@material-ui/core";
 import Search from "./search";
 import { useHistory } from "react-router-dom";
-import './Banner.css'
+import './banner.css'
 import TravelBackground from "../Assets/images/BeachBackground.jpg"
 import { Container } from '@material-ui/core';
 import Carousel from 'react-bootstrap/esm/Carousel';

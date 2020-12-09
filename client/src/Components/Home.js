@@ -1,6 +1,6 @@
 import React from 'react';
-import './Home.css';
-import Banner from './Banner'
+import './home.css';
+import Banner from './banner'
 import Card from './card'
 import { Container } from '@material-ui/core';
 import Carousel from 'react-bootstrap/esm/Carousel';
