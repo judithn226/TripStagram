@@ -1,10 +1,10 @@
 import React from "react";
 import './header.css';
-import logo from "../Assets/images/TrippInlogo.png";
+// import logo from "../Assets/images/Trippin";
 
 function Header() {
   return (
-    <nav className="navbar navbar-expand-lg navbar-dark">
+    <nav className="navbar navbar-expand-lg navbar-light">
       <a className="navbar-brand" href="/">
         {/* <img className="navbar-logo" src={logo} alt=""></img>       */}
         Trippin'
