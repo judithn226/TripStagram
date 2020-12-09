@@ -12,7 +12,7 @@ const path = require( 'path')
 //Routes and or Files
 const passport = require( './passport/setup.js')
 const auth = require( './routes/auth.js')
-const testRouter = require( './routes/testRouters.js')
+const testRouter = require( './routes/testRoute.js')
 const router = require( './routes/api.js')
 
 dotenv.config({ silent: process.env.NODE_ENV === 'production' })
