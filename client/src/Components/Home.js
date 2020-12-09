@@ -1,10 +1,11 @@
 import React from 'react';
 import './Home.css';
 import Banner from './Banner'
-import Card from './Card'
+// import Card from './card'
 import { Container } from '@material-ui/core';
 import Carousel from 'react-bootstrap/esm/Carousel';
 import OnlineExperiences from "../Assets/images/Travelbackground.jpg"
+import axios from 'axios'
 
 
 
