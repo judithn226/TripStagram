@@ -29,10 +29,12 @@ class Login extends React.Component {
   // <form onSubmit={this.form.handleSubmit}></form>
   render() {
     return (
+      <div className="loginform">
       <form onSubmit={this.form.handleSubmit}>
+        <h3>Log In</h3>
             <p>
               <label>
-                User Name
+                User Name:
                 <input
                   type="text"
                   name="name"
@@ -48,7 +50,7 @@ class Login extends React.Component {
  
             <p>
               <label>
-                Email
+                Email:
                 <input
                   type="email"
                   name="email"
@@ -64,7 +66,7 @@ class Login extends React.Component {
  
             <p>
               <label>
-                Password
+                Password:
                 <input
                   type="tel"
                   name="phone_number"
@@ -78,9 +80,10 @@ class Login extends React.Component {
               </label>
             </p>
             <p>
-              <button type="submit">Submit</button>
+              <button type="submit">LogIn</button>
             </p>
         </form>
+      </div>
     )
   }
 }

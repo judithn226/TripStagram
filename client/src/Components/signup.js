@@ -4,6 +4,7 @@ import "./signup.css"
 export default class SignUp extends Component {
     render() {
         return (
+            <div className="signupform">
             <form>
                 <h3>Sign Up</h3>
 
@@ -32,6 +33,7 @@ export default class SignUp extends Component {
                     Already registered <a href="login">sign in?</a>
                 </p>
             </form>
+            </div>
         );
     }
 }
