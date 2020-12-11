@@ -54,6 +54,8 @@ function Home() {
     )
 }
 
+
+
 //Below I inserted an axios call to call on the API. You can either keep it here
 //or put this in the places component. Either way, you need to create a search bar
 // to pass in a query for this call. Dropdown might work too.
