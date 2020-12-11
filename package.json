@@ -27,6 +27,7 @@
     "morgan": "^1.10.0",
     "nodemon": "^2.0.6",
     "passport": "^0.4.1",
-    "passport-local": "^1.0.0"
+    "passport-local": "^1.0.0",
+    "react-scripts": "^4.0.1"
   }
 }
