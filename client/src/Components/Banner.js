@@ -6,10 +6,15 @@ import './banner.css'
 import TravelBackground from "../Assets/images/LetGoBackground.jpg"
 import { Container } from '@material-ui/core';
 import Carousel from 'react-bootstrap/esm/Carousel';
+import SearchResult from "./searchResults";
 
+// function Plan()(
+//  console.log(SearchResult)
+// )
 function Banner() {
   const history = useHistory();
   const [showSearch, setShowSearch] = useState(false);
+
 
   return (
     <div className="banner">
@@ -28,8 +33,9 @@ function Banner() {
           variant="outlined">
           {showSearch ? "Hide" : "Search Dates"}
         </Button>
-        <Button onClick={() => history.push("/search")} variant="outlined">
+        <Button onClick={() => history.push("/search"), console.log("searching")} variant="outlined" >
           Plan Your Stay
+          
         </Button>
       </div>
       
