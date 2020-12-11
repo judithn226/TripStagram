@@ -4,7 +4,7 @@ import './header.css';
 
 function Header() {
   return (
-    <nav className="navbar navbar-expand-lg navbar-light">
+    <nav className="navbar navbar-expand-lg navbar-dark">
       <a className="navbar-brand" href="/">
         {/* <img className="navbar-logo" src={logo} alt=""></img>       */}
         Trippin'
