@@ -9,10 +9,11 @@ import Slider2 from "../Assets/images/Slider2.jpg"
 import Slider3 from "../Assets/images/Slider3.jpg"
 import axios from 'axios'
 
-
+const turkeyLeg;
 
 function Home() {
     return (
+        
         <div className='home'>
             <Banner />
             <Container>

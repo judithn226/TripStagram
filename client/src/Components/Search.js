@@ -13,6 +13,7 @@ function Search() {
   const history = useHistory();
   const [startDate, setStartDate] = useState(new Date());
   const [endDate, setEndDate] = useState(new Date());
+  const turkeyLeg;
 
   const selectionRange = {
     startDate: startDate,

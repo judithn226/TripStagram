@@ -14,14 +14,16 @@ import SearchResult from "./searchResults";
 function Banner() {
   const history = useHistory();
   const [showSearch, setShowSearch] = useState(false);
-
+  const turkeyLeg;
 
   return (
     <div className="banner">
       <Container>        
             <img className= "letgo-block w-100"
             src={TravelBackground}
+
             alt="Let Go background">
+
             </img>            
       </Container>
       
