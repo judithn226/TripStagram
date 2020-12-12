@@ -8,7 +8,7 @@ import React, { useState } from "react";
 
 
 import { Route } from "react-router-dom";
-import Search from "./Components/search";
+// import Search from "./Components/search";
 import SearchResult from "./Components/searchResult";
 
 function App() {

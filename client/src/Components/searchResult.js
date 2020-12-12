@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import './searchResult.css';
+// import './searchResult.css';
 import axios from 'axios'
 
 

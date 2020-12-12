@@ -9,7 +9,6 @@ import Rio from "../Assets/images/Rio.jpg"
 import Canada from "../Assets/images/CanadianRockies.jpg"
 import axios from "axios"
 
-const turkeyLeg;
 
 function Home() {
     return (
