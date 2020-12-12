@@ -5,7 +5,6 @@ import { Button } from "@material-ui/core";
 import PeopleIcon from "@material-ui/icons/People";
 import { useHistory } from "react-router-dom";
 import axios from "axios";
-import './search.css';
 
 
 
@@ -13,6 +12,7 @@ function Search() {
   const history = useHistory();
   const [startDate, setStartDate] = useState(new Date());
   const [endDate, setEndDate] = useState(new Date());
+  const turkeyLeg;
 
   const selectionRange = {
     startDate: startDate,
@@ -43,35 +43,6 @@ function Search() {
 //function you would be able to produce the result you want. Just think of a way 
 //to pass these values into this call.
 
-const options = {
-  method: 'GET',
-  url: 'https://airbnb-com.p.rapidapi.com/listings/nearby/37.788719679657554/-122.40057774847898',
-  params: {
-    offset: '0',
-    locale: 'en-US',
-    min_price: '0',
-    max_price: '5000',
-    //change guests belowe to a variable you are passing in.
-    max_guests: '2',
-    //change check_in and checkout date too
-    check_in: '2021-02-25',
-    radius: '5',
-    currency: 'USD',
-    check_out: '2021-02-26'
-  },
-  headers: {
-    'x-rapidapi-key': 'SIGN-UP-FOR-KEY',
-    'x-rapidapi-host': 'airbnb-com.p.rapidapi.com'
-  }
-};
 
-
-  axios.request(options).then(function (response) {
-    console.log(response.data);
-  }).catch(function (error) {
-    console.error(error);
-  });
  
-
-
 export default Search;

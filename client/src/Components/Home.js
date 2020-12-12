@@ -9,10 +9,11 @@ import Rio from "../Assets/images/Rio.jpg"
 import Canada from "../Assets/images/CanadianRockies.jpg"
 import axios from "axios"
 
-
+const turkeyLeg;
 
 function Home() {
     return (
+        
         <div className='home'>
             <Banner />
             <Container>
@@ -62,7 +63,7 @@ function Home() {
 const options = {
   method: 'GET',
   url: 'https://tripadvisor1.p.rapidapi.com/airports/search',
-  params: {query: 'new york', locale: 'en_US'},
+  params: {query: 'los angeles', locale: 'en_US'},
   headers: {
     'x-rapidapi-key': '9f05d26673mshb2c8499547bc2c5p1c9aafjsn197659763efe',
     'x-rapidapi-host': 'tripadvisor1.p.rapidapi.com'

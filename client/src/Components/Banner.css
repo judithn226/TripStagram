@@ -1,14 +1,10 @@
 .banner_search {
-    text-align: center;
-  }
-  Button {
-    color: mediumorchid;
-  }
-  .letgo-block {
-    width: auto;
-    height: 350 px;
-  }
-
-  
-
-  
+  text-align: center;
+}
+Button {
+  color: mediumorchid;
+}
+.letgo-block {
+  width: auto;
+  height: 350 px;
+}
