@@ -1,6 +1,8 @@
 import React from 'react'
+import "./login.css"
 
 import ReactFormInputValidation from "react-form-input-validation";
+import ParticlesBg from 'particles-bg'
  
 class Login extends React.Component {
   constructor(props) {
@@ -28,58 +30,60 @@ class Login extends React.Component {
   // <form onSubmit={this.form.handleSubmit}></form>
   render() {
     return (
+      <div className="loginform">
+        <ParticlesBg type="circle" bg={true} />
       <form onSubmit={this.form.handleSubmit}>
-            <p>
-              <label>
-                Name
+        <h3>Log In</h3>
+        <div className="form-group">
+              <label>User Name</label>
                 <input
                   type="text"
-                  name="name"
+                  className="form-control"
                   onBlur={this.form.handleBlurEvent}
                   onChange={this.form.handleChangeEvent}
                   value={this.state.fields.name}
                 />
-              </label>
+              
               <label className="error">
                 {this.state.errors.name ? this.state.errors.name : ""}
               </label>
-            </p>
+            </div>
  
-            <p>
-              <label>
-                Email
+            <div className="form-group">
+              <label>Email</label>
                 <input
                   type="email"
-                  name="email"
+                  className="form-control"
                   onBlur={this.form.handleBlurEvent}
                   onChange={this.form.handleChangeEvent}
                   value={this.state.fields.email}
                 />
-              </label>
+              
               <label className="error">
                 {this.state.errors.email ? this.state.errors.email : ""}
               </label>
-            </p>
+            </div>
  
-            <p>
-              <label>
-                Phone
+            <div className="form-group">
+              <label>Password</label>
                 <input
                   type="tel"
-                  name="phone_number"
+                  className="form-control"
                   onBlur={this.form.handleBlurEvent}
                   onChange={this.form.handleChangeEvent}
                   value={this.state.fields.phone_number}
                 />
-              </label>
+              
               <label className="error">
                 {this.state.errors.phone_number ? this.state.errors.phone_number : ""}
               </label>
-            </p>
-            <p>
-              <button type="submit">Submit</button>
-            </p>
+            </div>
+            
+            <button type="submit" className="btn btn-primary btn-block">Log In</button>
+            
         </form>
+      </div>
+      
     )
   }
 }

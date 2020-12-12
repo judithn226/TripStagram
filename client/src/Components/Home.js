@@ -1,52 +1,77 @@
-import React from "react";
-import "./Home.css";
-import Banner from "./Banner";
-import Card from "./Card";
+import React from 'react';
+import './home.css';
+import Banner from './banner'
+// import Card from './Card'
+import { Container } from '@material-ui/core';
+import Carousel from 'react-bootstrap/esm/Carousel';
+import OnlineExperiences from "../Assets/images/Paris.jpg"
+import Rio from "../Assets/images/Rio.jpg"
+import Canada from "../Assets/images/CanadianRockies.jpg"
+import axios from "axios"
+
+
 
 function Home() {
-  return (
-    <div className="home">
-      <Banner />
+    return (
+        <div className='home'>
+            <Banner />
+            <Container>
+                <Carousel>
+                    <Carousel.Item className="slideitem" interval={2000}>
+                        <img className= "d-block w-100"
+                        src={OnlineExperiences}
+                        alt="Online Experiences">
+                        </img>
+                        <Carousel.Caption>
+                            <h3>Search Flights</h3>
+                            <p>Get out of town for the weekend to a unique destination.</p>
+                        </Carousel.Caption>
+                    </Carousel.Item>
 
-      <div className="home__section">
-        <Card
-          src="https://a0.muscache.com/im/pictures/eb9c7c6a-ee33-414a-b1ba-14e8860d59b3.jpg?im_w=720"
-          title="Online Experiences"
-          description="Unique activities we can do together, led by a world of hosts."
-        />
-        <Card
-          src="https://a0.muscache.com/im/pictures/15159c9c-9cf1-400e-b809-4e13f286fa38.jpg?im_w=720"
-          title="Unique stays"
-          description="Spaces that are more than just a place to sleep."
-        />
-        <Card
-          src="https://a0.muscache.com/im/pictures/fdb46962-10c1-45fc-a228-d0b055411448.jpg?im_w=720"
-          title="Entire homes"
-          description="Comfortable private places, with room for friends or family."
-        />
-      </div>
-      <div className="home__section">
-        <Card
-          src="https://media.nomadicmatt.com/2019/airbnb_breakup3.jpg"
-          title="3 Bedroom Flat in Bournemouth"
-          description="Superhost with a stunning view of the beachside in Sunny Bournemouth"
-          price="£130/night"
-        />
-        <Card
-          src="https://thespaces.com/wp-content/uploads/2017/08/Courtesy-of-Airbnb.jpg"
-          title="Penthouse in London"
-          description="Enjoy the amazing sights of London with this stunning penthouse"
-          price="£350/night"
-        />
-        <Card
-          src="https://media.nomadicmatt.com/2018/apartment.jpg"
-          title="1 Bedroom apartment"
-          description="Superhost with great amenities and a fabolous shopping complex nearby"
-          price="£70/night"
-        />
-      </div>
-    </div>
-  );
+                    <Carousel.Item className="slideitem" interval={2000}>
+                        <img className= "d-block w-100"
+                        src={Rio}
+                        alt="Rio">
+                        </img>
+                        <Carousel.Caption>
+                            <h3>Explore the World</h3>
+                            <p>Get outside of your comfort zone.</p>
+                        </Carousel.Caption>
+                    </Carousel.Item>
+
+                    <Carousel.Item className="slideitem" interval={2000}>
+                        <img className= "d-block w-100"
+                    src={Canada}
+                        alt="Canada">
+                        </img>
+                        <Carousel.Caption>
+                            <h3>Relax and Unwind</h3>
+                            <p>Unplug from your busy life.</p>
+                        </Carousel.Caption>
+                    </Carousel.Item>
+                    
+                </Carousel>
+            </Container>            
+        </div>
+    )
 }
+
+//Below I inserted an axios call to call on the API. You can either keep it here
+//or put this in the places component. Either way, you need to create a search bar
+// to pass in a query for this call. Dropdown might work too.
+const options = {
+  method: 'GET',
+  url: 'https://tripadvisor1.p.rapidapi.com/airports/search',
+  params: {query: 'new york', locale: 'en_US'},
+  headers: {
+    'x-rapidapi-key': '9f05d26673mshb2c8499547bc2c5p1c9aafjsn197659763efe',
+    'x-rapidapi-host': 'tripadvisor1.p.rapidapi.com'
+  }
+};
+axios.request(options).then(function (response) {
+	console.log(response.data);
+}).catch(function (error) {
+	console.error(error);
+});
 
 export default Home;

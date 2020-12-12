@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 .banner {
   background: url("https://www.parisperfect.com/g/hero-images/home/margaux-eiffel-1920x880.jpg")
     center center;
@@ -43,3 +44,17 @@
 .banner__info > h5 {
   margin-top: 10px;
 }
+=======
+.banner_search {
+  text-align: center;
+}
+
+Button {
+  color: mediumorchid;
+}
+
+.letgo-block {
+  width: auto;
+  height: 140px;
+}
+>>>>>>> 27318d467623540c3f2b66d94213bf981192aefe
