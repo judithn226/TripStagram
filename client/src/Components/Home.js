@@ -1,10 +1,13 @@
 import React from 'react';
 import './home.css';
 import Banner from './banner'
+// import Card from './Card'
 import { Container } from '@material-ui/core';
 import Carousel from 'react-bootstrap/esm/Carousel';
-// import OnlineExperiences from "../Assets/images/Travelbackground.jpg"
-
+import OnlineExperiences from "../Assets/images/Paris.jpg"
+import Rio from "../Assets/images/Rio.jpg"
+import Canada from "../Assets/images/CanadianRockies.jpg"
+import axios from "axios"
 
 
 
@@ -20,30 +23,30 @@ function Home() {
                         alt="Online Experiences">
                         </img>
                         <Carousel.Caption>
-                            <h3>Online Experiences</h3>
-                            <p>Unique activities we can do together, led by a world of hosts.</p>
+                            <h3>Search Flights</h3>
+                            <p>Get out of town for the weekend to a unique destination.</p>
                         </Carousel.Caption>
                     </Carousel.Item>
 
                     <Carousel.Item className="slideitem" interval={2000}>
                         <img className= "d-block w-100"
-                        src="https://a0.muscache.com/im/pictures/15159c9c-9cf1-400e-b809-4e13f286fa38.jpg"
-                        alt="Unique Stays">
+                        src={Rio}
+                        alt="Rio">
                         </img>
                         <Carousel.Caption>
-                            <h3>Unique Stays</h3>
-                            <p>Spaces that are more than just a place to sleep.</p>
+                            <h3>Explore the World</h3>
+                            <p>Get outside of your comfort zone.</p>
                         </Carousel.Caption>
                     </Carousel.Item>
 
                     <Carousel.Item className="slideitem" interval={2000}>
                         <img className= "d-block w-100"
-                        src="https://a0.muscache.com/im/pictures/fdb46962-10c1-45fc-a228-d0b055411448.jpg"
-                        alt="Entire Homes">
+                    src={Canada}
+                        alt="Canada">
                         </img>
                         <Carousel.Caption>
-                            <h3>Entire Homes</h3>
-                            <p>Comfortable private places, with room for friends or family.</p>
+                            <h3>Relax and Unwind</h3>
+                            <p>Unplug from your busy life.</p>
                         </Carousel.Caption>
                     </Carousel.Item>
                     
