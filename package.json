@@ -29,11 +29,7 @@
     "particles-bg": "^2.5.0",
     "passport": "^0.4.1",
     "passport-local": "^1.0.0",
-<<<<<<< HEAD
-    "react-scripts": "^4.0.1"
-=======
     "react-scripts": "^4.0.1",
     "start": "^5.1.0"
->>>>>>> a0ad6e3191cc7c4f198e05975f9b0b4217332388
   }
 }
