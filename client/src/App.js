@@ -9,7 +9,7 @@ import React, { useState } from "react";
 
 import { Route } from "react-router-dom";
 import Search from "./Components/search";
-import SearchResult from "./Components/searchResults";
+import SearchResult from "./Components/searchResult";
 
 function App() {
   return (
@@ -20,7 +20,8 @@ function App() {
       <Route exact path="/Signup" component={SignUp} />
 
       <Route exact path="/Login" component={LogIn} />
-      <Route exact path="/searchResults" component={SearchResult}/>
+     
+      <Route exact path="/searchResult" component={SearchResult}/>
     </div>
   );
 }
