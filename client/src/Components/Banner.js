@@ -5,7 +5,6 @@ import { useHistory } from "react-router-dom";
 import './banner.css'
 import Bali from "../Assets/images/Bali.jpg"
 import { Container } from '@material-ui/core';
-import Carousel from 'react-bootstrap/esm/Carousel';
 import axios from 'axios';
 
 // function Plan()(
@@ -16,12 +15,14 @@ function Banner() {
   const [showSearch, setShowSearch] = useState(false);
 
   function Plan(){
+    //redirect with
+    
     console.log("searching")
     history.push("/searchResults")
     const options = {
       method: 'GET',
       url: 'https://tripadvisor1.p.rapidapi.com/airports/search',
-      params: {query: 'new york', locale: 'en_US'},
+      params: {query: 'los angeles', location: 'en_US'},
       headers: {
         'x-rapidapi-key': '9f05d26673mshb2c8499547bc2c5p1c9aafjsn197659763efe',
         'x-rapidapi-host': 'tripadvisor1.p.rapidapi.com'
@@ -29,6 +30,8 @@ function Banner() {
     };
     axios.request(options).then(function (response) {
       console.log(response.data);
+      //redirect to searchresultpage
+      //pass the data into context or Redirect and pass data
     }).catch(function (error) {
       console.error(error);
     });
@@ -50,7 +53,7 @@ function Banner() {
   //     },
   //     headers: {
   //       'x-rapidapi-key': '9f05d26673mshb2c8499547bc2c5p1c9aafjsn197659763efe',
-  //       'x-rapidapi-host': 'airbnb-com.p.rapidapi.com'
+  //       'x-rapidapi-host': '-com.p.rapidapi.com'
   //     }
   //   };
     
