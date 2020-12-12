@@ -29,7 +29,8 @@
     "particles-bg": "^2.5.0",
     "passport": "^0.4.1",
     "passport-local": "^1.0.0",
-    "react-scripts": "^4.0.1",
-    "start": "^5.1.0"
+    "react": "^17.0.1",
+    "react-dom": "^17.0.1",
+    "react-scripts": "^4.0.1"
   }
 }
