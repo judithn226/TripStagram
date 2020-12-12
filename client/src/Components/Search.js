@@ -1,10 +1,13 @@
 import React, { useState } from "react";
+// import './search.css'
 import { DateRangePicker } from "react-date-range";
 import { Button } from "@material-ui/core";
 import PeopleIcon from "@material-ui/icons/People";
 import { useHistory } from "react-router-dom";
 import axios from "axios";
 import './search.css';
+
+
 
 function Search() {
   const history = useHistory();
@@ -62,10 +65,13 @@ const options = {
   }
 };
 
-axios.request(options).then(function (response) {
-	console.log(response.data);
-}).catch(function (error) {
-	console.error(error);
-});
+
+  axios.request(options).then(function (response) {
+    console.log(response.data);
+  }).catch(function (error) {
+    console.error(error);
+  });
+ 
+
 
 export default Search;
