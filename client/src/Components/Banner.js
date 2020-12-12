@@ -3,7 +3,7 @@ import { Button } from "@material-ui/core";
 import Search from "./search";
 import { useHistory } from "react-router-dom";
 import './banner.css'
-import TravelBackground from "../Assets/images/LetGoBackground.jpg"
+import Bali from "../Assets/images/Bali.jpg"
 import { Container } from '@material-ui/core';
 import Carousel from 'react-bootstrap/esm/Carousel';
 import axios from 'axios';
@@ -66,8 +66,8 @@ function Banner() {
     <div className="banner">
       <Container>        
             <img className= "letgo-block w-100"
-            src={TravelBackground}
-            alt="Let Go background">
+            src={Bali}
+            alt="Bali">  
             </img>            
       </Container>
       
