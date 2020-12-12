@@ -1,60 +1,14 @@
-<<<<<<< HEAD
-.banner {
-  background: url("https://www.parisperfect.com/g/hero-images/home/margaux-eiffel-1920x880.jpg")
-    center center;
-  height: 50vh;
-  position: relative;
-}
-
-.banner_info {
-  background-color: black;
-  color: white;
-  padding-top: 25vh;
-  padding-left: 50px;
-  padding-right: 50px;
-  padding-bottom: 40px;
-  width: 300px;
-}
-
-.banner__search {
-  display: flex;
-  flex-direction: column;
-}
-
-.banner__searchButton {
-  background-color: white !important;
-  font-weight: 900 !important;
-  text-transform: inherit !important;
-  color: #ff7779 !important;
-}
-
-.banner__info > button {
-  background-color: #ff7779;
-  color: white;
-  text-transform: inherit;
-  margin-top: 20px;
-  font-weight: 600;
-}
-
-.banner__info > button:hover {
-  background-color: white;
-  color: #ff7779;
-}
-
-.banner__info > h5 {
-  margin-top: 10px;
-}
-=======
 .banner_search {
-  text-align: center;
-}
+    text-align: center;
+  }
+  Button {
+    color: mediumorchid;
+  }
+  .letgo-block {
+    width: auto;
+    height: 350 px;
+  }
 
-Button {
-  color: mediumorchid;
-}
+  
 
-.letgo-block {
-  width: auto;
-  height: 140px;
-}
->>>>>>> 27318d467623540c3f2b66d94213bf981192aefe
+  
