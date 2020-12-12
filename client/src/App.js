@@ -4,9 +4,13 @@ import Home from "./Components/home";
 import SignUp from "./Components/signup";
 import LogIn from "./Components/login";
 import Places from "./Components/places";
+import React, { useState } from "react";
+
 
 
 import { Route } from "react-router-dom";
+import Search from "./Components/search";
+import SearchResult from "./Components/searchResults";
 
 function App() {
   return (
@@ -18,6 +22,7 @@ function App() {
 
       <Route exact path="/Login" component={LogIn} />
       <Route exact path="/Places" component={Places} />
+      <Route exact path="/searchResults" component={SearchResult}/>
     </div>
   );
 }
