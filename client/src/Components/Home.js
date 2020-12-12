@@ -1,7 +1,6 @@
 import React from 'react';
 import './home.css';
 import Banner from './banner'
-import Card from './card'
 import { Container } from '@material-ui/core';
 import Carousel from 'react-bootstrap/esm/Carousel';
 import Slider1 from "../Assets/images/Slider1.jpg"
@@ -14,7 +13,12 @@ import axios from 'axios'
 function Home() {
     return (
         <div className='home'>
+            <Container>
             <Banner />
+            </Container>
+            
+
+            {/* <div className='home__section'>
             <Container>
                 <Carousel>
                     <Carousel.Item className="slideitem" interval={1500}>
@@ -62,17 +66,21 @@ function Home() {
                     </Carousel.Item>
                     
                 </Carousel>
-            </Container>            
+            </Container>             */}
         </div>
     )
-}
+};
 
+<<<<<<< HEAD
+{/* //Below I inserted an axios call to call on the API. You can either keep it here
+=======
 
 
 //Below I inserted an axios call to call on the API. You can either keep it here
+>>>>>>> 12367b97a3ec5b93d88151e4f032392e979634af
 //or put this in the places component. Either way, you need to create a search bar
-// to pass in a query for this call. Dropdown might work too.
-const options = {
+// to pass in a query for this call. Dropdown might work too. */}
+{/* const options = {
   method: 'GET',
   url: 'https://tripadvisor1.p.rapidapi.com/airports/search',
   params: {query: 'new york', locale: 'en_US'},
@@ -85,6 +93,6 @@ axios.request(options).then(function (response) {
 	console.log(response.data);
 }).catch(function (error) {
 	console.error(error);
-});
+}); */}
 
 export default Home;

@@ -5,6 +5,7 @@ import { Button } from "@material-ui/core";
 import PeopleIcon from "@material-ui/icons/People";
 import { useHistory } from "react-router-dom";
 import axios from "axios";
+import './search.css';
 
 
 
