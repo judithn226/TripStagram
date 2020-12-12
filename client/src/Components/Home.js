@@ -1,10 +1,10 @@
 import React from 'react';
-import './Home.css';
-import Banner from './Banner'
-import Card from './Card'
+import './home.css';
+import Banner from './banner'
 import { Container } from '@material-ui/core';
 import Carousel from 'react-bootstrap/esm/Carousel';
-import OnlineExperiences from "../Assets/images/Travelbackground.jpg"
+// import OnlineExperiences from "../Assets/images/Travelbackground.jpg"
+
 
 
 
