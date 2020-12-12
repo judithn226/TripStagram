@@ -5,6 +5,9 @@ import StarIcon from "@material-ui/icons/Star";
 
 function SearchResult({
     img,
+    code,
+    country_code,
+    name,
     location,
     title,
     description,
