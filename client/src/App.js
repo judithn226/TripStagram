@@ -20,7 +20,6 @@ function App() {
       <Route exact path="/Signup" component={SignUp} />
 
       <Route exact path="/Login" component={LogIn} />
-      <Route exact path="/Places" component={Places} />
       <Route exact path="/searchResults" component={SearchResult}/>
     </div>
   );
