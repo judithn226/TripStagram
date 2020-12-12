@@ -3,7 +3,6 @@ import Header from "./Components/header";
 import Home from "./Components/home";
 import SignUp from "./Components/signup";
 import LogIn from "./Components/login";
-import Places from "./Components/places";
 import React, { useState } from "react";
 
 
