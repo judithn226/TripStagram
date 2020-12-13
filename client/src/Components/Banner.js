@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { Button } from "@material-ui/core";
 import Search from "./Search";
 import { useHistory } from "react-router-dom";
-import './Banner.css'
+import './banner.css'
 import Bali from "../Assets/images/Bali.jpg"
 import { Container } from '@material-ui/core';
 import axios from 'axios';

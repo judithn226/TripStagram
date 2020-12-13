@@ -1,5 +1,5 @@
 import React from 'react';
-import './Home.css';
+import './home.css';
 import Banner from './Banner'
 import AboutUs from './aboutUs'
 // import Card from './Card'
