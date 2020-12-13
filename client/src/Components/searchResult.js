@@ -1,7 +1,8 @@
 import React, { useState } from 'react';
 // import './searchResult.css';
-import axios from 'axios'
-
+import axios from 'axios';
+// import Page from 'searchPage';
+// import { Container } from "@material-ui/core";
 
 function SearchResult({
     img,
@@ -34,6 +35,12 @@ function SearchResult({
     }
 
     return (
+        // <div className= searchPage> 
+        //      <Container>
+        //     <searchPage/>
+        //     </Container>
+           
+
         <div className='searchResult'>
             <img src={img} alt="" />
 
@@ -62,7 +69,8 @@ function SearchResult({
                 </div>
             </div>
         </div>
+        // </div>
     )
 }
 
-export default SearchResult
+export default SearchResult;
