@@ -14,14 +14,16 @@ import SearchResult from "./Components/searchResult";
 function App() {
   return (
     <div>
-      <Header />
+       <Header />
+            <Route exact path="/searchResult" component={SearchResult}/>
+
+     
       <Route exact path="/" component={Home} />
 
       <Route exact path="/Signup" component={SignUp} />
 
       <Route exact path="/Login" component={LogIn} />
      
-      <Route exact path="/searchResult" component={SearchResult}/>
     </div>
   );
 }

@@ -18,23 +18,23 @@ function Banner() {
     //redirect with
     
     console.log("searching")
-    history.push("/searchResults")
-    const options = {
-      method: 'GET',
-      url: 'https://tripadvisor1.p.rapidapi.com/airports/search',
-      params: {query: 'los angeles', location: 'en_US'},
-      headers: {
-        'x-rapidapi-key': '9f05d26673mshb2c8499547bc2c5p1c9aafjsn197659763efe',
-        'x-rapidapi-host': 'tripadvisor1.p.rapidapi.com'
-      }
-    };
-    axios.request(options).then(function (response) {
-      console.log(response.data);
-      //redirect to searchresultpage
-      //pass the data into context or Redirect and pass data
-    }).catch(function (error) {
-      console.error(error);
-    });
+    history.push("/searchResult")
+    // const options = {
+    //   method: 'GET',
+    //   url: 'https://tripadvisor1.p.rapidapi.com/airports/search',
+    //   params: {query: 'los angeles', location: 'en_US'},
+    //   headers: {
+    //     'x-rapidapi-key': '9f05d26673mshb2c8499547bc2c5p1c9aafjsn197659763efe',
+    //     'x-rapidapi-host': 'tripadvisor1.p.rapidapi.com'
+    //   }
+    // };
+    // axios.request(options).then(function (response) {
+    //   console.log(response.data);
+    //   //redirect to searchresultpage
+    //   //pass the data into context or Redirect and pass data
+    // }).catch(function (error) {
+    //   console.error(error);
+    // });
   //   const options = {
   //     method: 'GET',
   //     url: 'https://airbnb-com.p.rapidapi.com/listings/nearby/37.788719679657554/-122.40057774847898',

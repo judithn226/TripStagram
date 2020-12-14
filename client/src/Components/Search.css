@@ -5,11 +5,11 @@
   width: 100vw;
 }
 
-.search > h2 {
+.search > h3 {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  width: 559px;
+  width: 500px;
   padding: 10px;
   background-color: white;
   position: absolute;
@@ -18,7 +18,7 @@
 }
 
 .search > input {
-  width: 539px;
+  width: 500px;
   padding: 20px;
   position: absolute;
   left: 0;

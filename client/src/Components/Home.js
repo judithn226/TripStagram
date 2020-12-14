@@ -1,6 +1,7 @@
 import React from 'react';
 import './home.css';
 import Banner from './banner'
+import AboutUs from './aboutUs'
 // import Card from './Card'
 import { Container } from '@material-ui/core';
 import Carousel from 'react-bootstrap/esm/Carousel';
@@ -52,6 +53,7 @@ function Home() {
                     
                 </Carousel>
             </Container>            
+            <AboutUs/>
         </div>
     )
 }
