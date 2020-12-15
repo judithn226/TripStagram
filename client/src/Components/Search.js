@@ -34,7 +34,7 @@ function Search() {
         Number of Guests <PeopleIcon />
       </h3>
       <input min={0} defaultValue={2} type="number" />
-      <Button onClick={() => history.push("/Search")}>Search Trippin'</Button>
+      <Button onClick={() => history.push("/searchResult")}>Search Trippin'</Button>
     </div>
   );
 }
