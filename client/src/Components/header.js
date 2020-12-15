@@ -39,11 +39,6 @@ function Header() {
               LogIn
             </a>
           </li>
-          <li className="nav-item active">
-            <a className="nav-link" href="places">
-              Places
-            </a>
-          </li>
           </ul>
       </div>
     </nav>
