@@ -1,8 +1,9 @@
 import React, { Component } from "react";
-import './searchResult.css'
+import "./searchResult.css";
 import axios from "axios";
 import Card from "react-bootstrap/Card";
-import CardDeck from "react-bootstrap/Card";
+import Image from "react-bootstrap/Image";
+
 import Thailand from "../Assets/images/Thailand.jpeg";
 import MachuPicchu from "../Assets/images/MachuPicchu.jpeg";
 import BoraBora from "../Assets/images/BoraBora.jpeg";
@@ -60,42 +61,53 @@ class SearchResult extends Component {
     return (
       <div>
         Search Results
-        <Card style={{ width: '18rem' }}>
-  <Card.Body>
-    <Card.Title>Card Title</Card.Title>
-    <Card.Subtitle className="mb-2 text-muted">Card Subtitle</Card.Subtitle>
-    <Card.Text>
-      Some quick example text to build on the card title and make up the bulk of
-      the card's content.
-    </Card.Text>
-    <Card.Link href="#">Card Link</Card.Link>
-    <Card.Link href="#">Another Link</Card.Link>
-  </Card.Body>
-</Card>
-<Card style={{ width: '18rem' }}>
-  <Card.Body>
-    <Card.Title>Card Title</Card.Title>
-    <Card.Subtitle className="mb-2 text-muted">Card Subtitle</Card.Subtitle>
-    <Card.Text>
-      Some quick example text to build on the card title and make up the bulk of
-      the card's content.
-    </Card.Text>
-    <Card.Link href="#">Card Link</Card.Link>
-    <Card.Link href="#">Another Link</Card.Link>
-  </Card.Body>
-</Card>
-<Card style={{ width: '18rem' }}>
-  <Card.Body>
-    <Card.Title>Card Title</Card.Title>
-    <Card.Subtitle className="mb-2 text-muted">Card Subtitle</Card.Subtitle>
-    <Card.Text>
-      Some quick example text to build on the card title and make up the bulk of
-      the card's content.
-    </Card.Text>
-    <Card.Link href="#">Card Link</Card.Link>
-    <Card.Link href="#">Another Link</Card.Link>
-  </Card.Body>
-</Card>
+        <Card style={{ width: "18rem" }}>
+          <Card.Body>
+            <Card.Title>THE PENINSULA BANGKOK</Card.Title>
+            <Image src={Thailand} fluid />
+            <Card.Text>
+              "All rooms at the Peninsula Bangkok have breathtaking views of the
+              Chao Phraya River and the city beyond. Some rooms offer landscaped
+              balconies where guests can relax and enjoy the stunning views and
+              the river breezes or indulge in an intimate fine dining
+              experience."
+            </Card.Text>
+            <Card.Link href="https://www.peninsula.com/en/bangkok/5-star-luxury-hotel-riverside">
+              Book Now
+            </Card.Link>
+          </Card.Body>
+        </Card>
+        <Card style={{ width: "18rem" }}>
+          <Card.Body>
+            <Card.Title>INKATERRA MACHU PICCHU PUEBLO HOTEL</Card.Title>
+            <Image src={MachuPicchu} fluid />
+            <Card.Text>
+              "Popular with those heading to the ancient citadel of Machu
+              Picchu, Inkaterra Machu Picchu Pueblo Hotel is an intimate Andean
+              village with terraced hills, waterfalls, stone pathways and 83
+              whitewashed adobe casitas tucked away in the cloud forest."
+            </Card.Text>
+            <Card.Link href="https://www.inkaterra.com/inkaterra/inkaterra-machu-picchu-pueblo-hotel/the-experience/">
+              Book Now
+            </Card.Link>
+          </Card.Body>
+        </Card>
+        <Card style={{ width: "18rem" }}>
+          <Card.Body>
+            <Card.Title>CONRAD BORA BORA NUI</Card.Title>
+            <Image src={BoraBora} fluid />
+            <Card.Text>
+              "Welcome to Conrad Bora Bora Nui, a blissful and luxurious resort
+              where relaxation and unparalleled views await you. Located on a
+              private island - Motu To'opua, our guests experience the longest
+              private stretch of soft white sand beaches nestled between the
+              soaring backdrop of Mount Otemanu and the mesmerizing lagoon."
+            </Card.Text>
+            <Card.Link href="https://conradhotels3.hilton.com/en/hotels/french-polynesia/conrad-bora-bora-nui-PPTBNCI/index.html">
+              Book Now
+            </Card.Link>
+          </Card.Body>
+        </Card>
       </div>
     );
   }
