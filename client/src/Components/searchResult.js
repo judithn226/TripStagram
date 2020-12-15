@@ -3,10 +3,11 @@ import "./searchResult.css";
 import axios from "axios";
 import Card from "react-bootstrap/Card";
 import Image from "react-bootstrap/Image";
-
 import Thailand from "../Assets/images/Thailand.jpeg";
 import MachuPicchu from "../Assets/images/MachuPicchu.jpeg";
 import BoraBora from "../Assets/images/BoraBora.jpeg";
+import Greece from "../Assets/images/Greece.jpeg";
+import Scandinavia from "../Assets/images/Scandinavia.jpg";
 
 class SearchResult extends Component {
   constructor(props) {
@@ -104,6 +105,36 @@ class SearchResult extends Component {
               soaring backdrop of Mount Otemanu and the mesmerizing lagoon."
             </Card.Text>
             <Card.Link href="https://conradhotels3.hilton.com/en/hotels/french-polynesia/conrad-bora-bora-nui-PPTBNCI/index.html">
+              Book Now
+            </Card.Link>
+          </Card.Body>
+        </Card>
+        <Card style={{ width: "18rem" }}>
+          <Card.Body>
+            <Card.Title>ASTARTE SUITES SANTORINI</Card.Title>
+            <Image src={Greece} fluid />
+            <Card.Text>
+              "Astarte Suites Hotel has created a luxury romantic escape with a
+              breathtaking Volcanic backdrop and the mythical Caldera of
+              Santorini island in Greece. No wonder it is the favorite choice
+              for vacation and honeymoon all over the world."
+            </Card.Text>
+            <Card.Link href="https://www.astartesuites.gr/en/">
+              Book Now
+            </Card.Link>
+          </Card.Body>
+        </Card>
+        <Card style={{ width: "18rem" }}>
+          <Card.Body>
+            <Card.Title>ION ADVENTURE HOTEL ICELAND</Card.Title>
+            <Image src={Scandinavia} fluid />
+            <Card.Text>
+              "ION Adventure Hotel at Nesjavellir in Iceland is an unforgettable
+              experience. Whether you are seeking a quiet, soulful soak beneath
+              the Northern Lights, a challenging trek across an ancient glacier
+              or a day of fly-fishing in plentiful icy rivers. "
+            </Card.Text>
+            <Card.Link href="https://ionadventure.ioniceland.is/">
               Book Now
             </Card.Link>
           </Card.Body>
