@@ -8,6 +8,7 @@ import MachuPicchu from "../Assets/images/MachuPicchu.jpeg";
 import BoraBora from "../Assets/images/BoraBora.jpeg";
 import Greece from "../Assets/images/Greece.jpeg";
 import Scandinavia from "../Assets/images/Scandinavia.jpg";
+import Goldcoast from "../Assets/images/Goldcoast.jpg";
 
 class SearchResult extends Component {
   constructor(props) {
@@ -62,6 +63,18 @@ class SearchResult extends Component {
     return (
       <div>
         Search Results
+        <Card style={{ width: "18rem" }}>
+          <Card.Body>
+            <Card.Title>Search Results</Card.Title>
+            <Image src={Goldcoast} fluid />
+            <Card.Text>
+              "Post API results here."
+            </Card.Text>
+            <Card.Link href="#">
+              Book Now
+            </Card.Link>
+          </Card.Body>
+        </Card>
         <Card style={{ width: "18rem" }}>
           <Card.Body>
             <Card.Title>THE PENINSULA BANGKOK</Card.Title>
