@@ -1,7 +1,7 @@
-.Card.Img{
+.image{
     display: flex !important;
-    height: 900 px;
-    width: 900 px;
+    height: 250 px;
+    width: 250 px;
     overflow: hidden;
     padding-left: 0px;
 
