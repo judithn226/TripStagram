@@ -68,20 +68,16 @@ function Banner() {
 
   return (
     <div className="banner">
-      <Container>        
-            <img className= "letgo-block w-100"
-
-            src={Bali}
-            
-            alt="Bali">  
-          
-              
-            </img>            
-      </Container>
+      <div className='banner_center'>
+                <input type="text" 
+                name = "searchBar"
+                id = "searchBar"
+                placeholder = "Type to search" />
+            </div>
       
       <div className="banner_search">
         {showSearch && <Search />}
-        <Button 
+        <Button class = "button"
           onClick={() => setShowSearch(!showSearch)}
           className="banner__searchButton"
           variant="outlined">
