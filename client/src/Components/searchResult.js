@@ -61,21 +61,21 @@ class SearchResult extends Component {
   };
   render() {
     return (
-      <div>
+      <div className="foundResults">
         Search Results
-        <Card style={{ width: "18rem" }}>
+        <Card>
           <Card.Body>
             <Card.Title>Search Results</Card.Title>
             <Image src={Goldcoast} fluid />
             <Card.Text>
               "Post API results here."
             </Card.Text>
-            <Card.Link href="#">
+            <Card.Link href="#" target="_blank">
               Book Now
             </Card.Link>
           </Card.Body>
         </Card>
-        <Card style={{ width: "18rem" }}>
+        <Card>
           <Card.Body>
             <Card.Title>THE PENINSULA BANGKOK</Card.Title>
             <Image src={Thailand} fluid />
@@ -86,12 +86,12 @@ class SearchResult extends Component {
               the river breezes or indulge in an intimate fine dining
               experience."
             </Card.Text>
-            <Card.Link href="https://www.peninsula.com/en/bangkok/5-star-luxury-hotel-riverside">
+            <Card.Link href="https://www.peninsula.com/en/bangkok/5-star-luxury-hotel-riverside" target="_blank">
               Book Now
             </Card.Link>
           </Card.Body>
         </Card>
-        <Card style={{ width: "18rem" }}>
+        <Card>
           <Card.Body>
             <Card.Title>INKATERRA MACHU PICCHU PUEBLO HOTEL</Card.Title>
             <Image src={MachuPicchu} fluid />
@@ -101,12 +101,12 @@ class SearchResult extends Component {
               village with terraced hills, waterfalls, stone pathways and 83
               whitewashed adobe casitas tucked away in the cloud forest."
             </Card.Text>
-            <Card.Link href="https://www.inkaterra.com/inkaterra/inkaterra-machu-picchu-pueblo-hotel/the-experience/">
+            <Card.Link href="https://www.inkaterra.com/inkaterra/inkaterra-machu-picchu-pueblo-hotel/the-experience/" target="_blank">
               Book Now
             </Card.Link>
           </Card.Body>
         </Card>
-        <Card style={{ width: "18rem" }}>
+        <Card>
           <Card.Body>
             <Card.Title>CONRAD BORA BORA NUI</Card.Title>
             <Image src={BoraBora} fluid />
@@ -117,12 +117,12 @@ class SearchResult extends Component {
               private stretch of soft white sand beaches nestled between the
               soaring backdrop of Mount Otemanu and the mesmerizing lagoon."
             </Card.Text>
-            <Card.Link href="https://conradhotels3.hilton.com/en/hotels/french-polynesia/conrad-bora-bora-nui-PPTBNCI/index.html">
+            <Card.Link href="https://conradhotels3.hilton.com/en/hotels/french-polynesia/conrad-bora-bora-nui-PPTBNCI/index.html" target="_blank"> 
               Book Now
             </Card.Link>
           </Card.Body>
         </Card>
-        <Card style={{ width: "18rem" }}>
+        <Card>
           <Card.Body>
             <Card.Title>ASTARTE SUITES SANTORINI</Card.Title>
             <Image src={Greece} fluid />
@@ -132,12 +132,12 @@ class SearchResult extends Component {
               Santorini island in Greece. No wonder it is the favorite choice
               for vacation and honeymoon all over the world."
             </Card.Text>
-            <Card.Link href="https://www.astartesuites.gr/en/">
+            <Card.Link href="https://www.astartesuites.gr/en/" target="_blank">
               Book Now
             </Card.Link>
           </Card.Body>
         </Card>
-        <Card style={{ width: "18rem" }}>
+        <Card>
           <Card.Body>
             <Card.Title>ION ADVENTURE HOTEL ICELAND</Card.Title>
             <Image src={Scandinavia} fluid />
@@ -147,7 +147,7 @@ class SearchResult extends Component {
               the Northern Lights, a challenging trek across an ancient glacier
               or a day of fly-fishing in plentiful icy rivers. "
             </Card.Text>
-            <Card.Link href="https://ionadventure.ioniceland.is/">
+            <Card.Link href="https://ionadventure.ioniceland.is/" target="_blank">
               Book Now
             </Card.Link>
           </Card.Body>

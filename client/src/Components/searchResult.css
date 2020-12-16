@@ -1,8 +1,12 @@
-.image{
-    display: flex !important;
-    height: 250 px;
-    width: 250 px;
-    overflow: hidden;
-    padding-left: 0px;
+.image {
+  display: flex !important;
+  height: 250 px;
+  width: 250 px;
+  overflow: hidden;
+  padding-left: 0px;
+}
 
+.foundResults {
+  text-align: center;
+  align-content: center;
 }
