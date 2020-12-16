@@ -6,7 +6,7 @@ import './banner.css'
 import Bali from "../Assets/images/Bali.jpg"
 import { Container } from '@material-ui/core';
 import axios from 'axios';
-import SearchResult from "./searchResults";
+// import SearchResult from "./searchResults";
 
 // function Plan()(
 //  console.log(SearchResult)
