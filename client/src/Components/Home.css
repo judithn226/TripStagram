@@ -7,3 +7,8 @@
   width: 500px;
   height: 500px;
 }
+.home{
+  background-image: url(../Assets/images/Bali.jpg);
+  background-size: 100% ;
+  background-repeat: no-repeat;
+}

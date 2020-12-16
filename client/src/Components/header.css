@@ -1,5 +1,5 @@
 .navbar {
-  background-color: #363b41;
+  background-color:rgb(27, 153, 236);
 }
 
 .nav-item {
@@ -15,4 +15,11 @@ a {
 }
 a:hover {
   color: #0f0;
+}
+.header__center {
+  display: flex;
+  flex: 1;
+  align-items: center;
+  margin-left: 500px;
+  width: 100%;
 }
