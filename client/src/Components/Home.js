@@ -1,6 +1,6 @@
 import React from 'react';
-import './home.css';
-import Banner from './banner'
+import './Home.css';
+import Banner from './Banner'
 import AboutUs from './aboutUs'
 // import Card from './Card'
 import { Container } from '@material-ui/core';
