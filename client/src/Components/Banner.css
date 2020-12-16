@@ -8,3 +8,18 @@ Button {
   width: auto;
   height: 350 px;
 }
+.banner_center{
+  margin-left: 600px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+ 
+}
+
+.banner_center input {
+  height: 40px;
+  width: 500px;
+}
+
+.button{
+  margin-bottom: 500px;
+}
