@@ -14,4 +14,8 @@ router.post('/createuser', ({ body }, res) => {
     .catch((err) => res.status(400).json(err))
 })
 
+// router.get("/usercheck",(req,res)=>{
+//   //check if user is logged in on the sevrer
+//   res.send(req.session?.user)
+// })
 module.exports = router

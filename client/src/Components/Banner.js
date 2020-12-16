@@ -2,10 +2,11 @@ import React, { useState } from "react";
 import { Button } from "@material-ui/core";
 import Search from "./Search";
 import { useHistory } from "react-router-dom";
-import './Banner.css'
+import './banner.css'
 import Bali from "../Assets/images/Bali.jpg"
 import { Container } from '@material-ui/core';
 import axios from 'axios';
+// import SearchResult from "./searchResults";
 
 // function Plan()(
 //  console.log(SearchResult)
@@ -18,7 +19,7 @@ function Banner() {
     //redirect with
     
     console.log("searching")
-    history.push("/searchResult")
+    // <Link to ="/searchResult">SearchResult</Link>
     // const options = {
     //   method: 'GET',
     //   url: 'https://tripadvisor1.p.rapidapi.com/airports/search',
