@@ -20,13 +20,6 @@ function Header() {
         <span className="navbar-toggler-icon" />
       </button>
 
-      <div className='header__center'>
-                <input type="text" 
-                name = "searchBar"
-                id = "searchBar"
-                placeholder = "Type to search" />
-           
-            </div>
 
       <div className="collapse navbar-collapse" id="navbarSupportedContent">
         <ul className="navbar-nav mr-auto">

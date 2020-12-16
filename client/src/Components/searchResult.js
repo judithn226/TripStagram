@@ -9,6 +9,7 @@ import BoraBora from "../Assets/images/BoraBora.jpeg";
 import Greece from "../Assets/images/Greece.jpeg";
 import Scandinavia from "../Assets/images/Scandinavia.jpg";
 import Goldcoast from "../Assets/images/Goldcoast.jpg";
+const searchBar = document.getElementById('searchBar');
 
 class SearchResult extends Component {
   constructor(props) {
@@ -28,6 +29,7 @@ class SearchResult extends Component {
       headers: {
         "x-rapidapi-key": "9f05d26673mshb2c8499547bc2c5p1c9aafjsn197659763efe",
         "x-rapidapi-host": "tripadvisor1.p.rapidapi.com",
+        "useQueryString": true
       },
     };
     axios
@@ -45,6 +47,7 @@ class SearchResult extends Component {
             "x-rapidapi-key":
               "9f05d26673mshb2c8499547bc2c5p1c9aafjsn197659763efe",
             "x-rapidapi-host": "tripadvisor1.p.rapidapi.com",
+            "useQueryString": true
           },
         };
         axios.request(hotelOptions).then(function (hotelResponse) {
@@ -157,10 +160,19 @@ class SearchResult extends Component {
   }
 }
 
-//    data.map(airport=>{
-// return <h3>{airport.code}</h3>,
-//     <h3>{airport.city_name}</h3>
+/*const loadLocation = async () =>{
+  try{
+    const res = await fetch('https://tripadvisor1.p.rapidapi.com/airports/search');
+    let location = await res.json();
+    displayLocation(location);
+    console.log(location);
+  } catch (err){
+    console.log(err);
+  }
+};
 
-//    })
+
+loadLocation();
+*/
 
 export default SearchResult;

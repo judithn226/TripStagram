@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import './Search.css'
+import './search.css'
 import { DateRangePicker } from "react-date-range";
 import { Button } from "@material-ui/core";
 import PeopleIcon from "@material-ui/icons/People";
@@ -30,7 +30,7 @@ function Search() {
   return (
     <div className="search">
       <DateRangePicker ranges={[selectionRange]} onChange={handleSelect} />
-      <h3>
+      <h3 >
         Number of Guests <PeopleIcon />
       </h3>
       <input min={0} defaultValue={2} type="number" />
