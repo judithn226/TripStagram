@@ -38,7 +38,7 @@ class Login extends React.Component {
               <label>User Name</label>
                 <input
                   type="text"
-                  className="form-control"
+                  className="form-control" placeholder="Username"
                   onBlur={this.form.handleBlurEvent}
                   onChange={this.form.handleChangeEvent}
                   value={this.state.fields.name}
@@ -53,7 +53,7 @@ class Login extends React.Component {
               <label>Email</label>
                 <input
                   type="email"
-                  className="form-control"
+                  className="form-control" placeholder="Email"
                   onBlur={this.form.handleBlurEvent}
                   onChange={this.form.handleChangeEvent}
                   value={this.state.fields.email}
@@ -68,7 +68,7 @@ class Login extends React.Component {
               <label>Password</label>
                 <input
                   type="tel"
-                  className="form-control"
+                  className="form-control" placeholder="Password"
                   onBlur={this.form.handleBlurEvent}
                   onChange={this.form.handleChangeEvent}
                   value={this.state.fields.phone_number}

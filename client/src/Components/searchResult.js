@@ -29,6 +29,7 @@ class SearchResult extends Component {
       headers: {
         "x-rapidapi-key": "9f05d26673mshb2c8499547bc2c5p1c9aafjsn197659763efe",
         "x-rapidapi-host": "tripadvisor1.p.rapidapi.com",
+        "useQueryString": true
       },
     };
     axios
@@ -46,6 +47,7 @@ class SearchResult extends Component {
             "x-rapidapi-key":
               "9f05d26673mshb2c8499547bc2c5p1c9aafjsn197659763efe",
             "x-rapidapi-host": "tripadvisor1.p.rapidapi.com",
+            "useQueryString": true
           },
         };
         axios.request(hotelOptions).then(function (hotelResponse) {
