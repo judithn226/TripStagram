@@ -1,25 +1,50 @@
 .banner_search {
   text-align: center;
+  margin-top: 1px;
+  margin-right: 130px;
+ 
 }
+
 Button {
-  color: mediumorchid;
+  color: black;
+  background-color: rgb(27, 153, 236);
+  height: 82px;
+  width: 110px;
+  outline-color: black;
+
+ 
 }
+
+
 .letgo-block {
   width: auto;
-  height: 350 px;
+  height: 150px;
+  
 }
 .banner_center{
-  margin-left: 600px;
-  padding-top: 15px;
-  padding-bottom: 15px;
+  margin-top: -52.5px;
  
 }
 
 .banner_center input {
-  height: 40px;
-  width: 500px;
+  height: 80px;
+  width: 600px;
+  border-color: black;
+  box-shadow: 0px 10px;  
+  margin-top: -220px;
+  
+  
 }
 
 .button{
+  margin-left: 700px;
+  margin-top: 200px;
+  box-shadow: 5px 8.54px;
+
+
+}
+.banner{
+  margin-top: 50px;
   margin-bottom: 500px;
+  
 }

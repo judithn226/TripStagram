@@ -1,14 +1,18 @@
 .home__section {
   display: flex;
   padding: 30px;
+  
 }
 
 .slideitem > img {
+ 
   width: 500px;
-  height: 500px;
+  height: 600px;
 }
 .home{
-  background-image: url(../Assets/images/Bali.jpg);
-  background-size: 100% ;
+  
+  background-image: url(../Assets/images/paperplanes.JPG);
+  background-size: 100%; 
   background-repeat: no-repeat;
 }
+
