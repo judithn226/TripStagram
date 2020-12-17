@@ -23,7 +23,12 @@ Button {
 }
 .banner_center{
   margin-top: -47.5px;
- 
+}
+.banner_center {
+  margin-left: 600px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+
 }
 
 .banner_center input {
@@ -36,6 +41,7 @@ Button {
   
   
 }
+
 
 .button{
   margin-left: 700px;
@@ -51,3 +57,8 @@ Button {
 a{
   font-size: 20px;
 }
+
+.button {
+  margin-bottom: 500px;
+}
+
