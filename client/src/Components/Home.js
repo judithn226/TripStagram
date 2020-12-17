@@ -149,6 +149,24 @@ function Home(props) {
 //or put this in the places component. Either way, you need to create a search bar
 // to pass in a query for this call. Dropdown might work too.
 
+=======
+const options = {
+  method: 'GET',
+  url: 'https://tripadvisor1.p.rapidapi.com/airports/search',
+  params: {query: 'los angeles', locale: 'en_US'},
+  headers: {
+    'x-rapidapi-key': '9f05d26673mshb2c8499547bc2c5p1c9aafjsn197659763efe',
+    'x-rapidapi-host': 'tripadvisor1.p.rapidapi.com',
+    "useQueryString": true
+  }
+};
+axios.request(options).then(function (response) {
+	console.log(response.data);
+}).catch(function (error) {
+	console.error(error);
+});
+
+
 // console.log(searchBar);
 
 // const options = {
