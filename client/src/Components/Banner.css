@@ -22,10 +22,10 @@ Button {
   
 }
 .banner_center{
-  margin-top: -562.9px;
+  margin-top: -561.9px;
 }
 .banner_center {
-  margin-left: 5px;
+  margin-left: 0px;
   padding-top: 15px;
   padding-bottom: 15px;
 
@@ -45,9 +45,14 @@ Button {
 
 .button{
   margin-left: 700px;
-  margin-top: 200px;
   box-shadow: 5px 8.54px;
-
+  margin-top: 500px;
+}
+.button1{
+margin-left: 100px;
+  box-shadow: 5px 8.54px;
+  width: 700px;
+  font-size: 30px;
 }
 .banner{
   margin-top: 50px;

@@ -29,7 +29,7 @@ function Search() {
 
   return (
     <div className="search">
-      <DateRangePicker ranges={[selectionRange]} onChange={handleSelect} />
+      <DateRangePicker className="bigbox" ranges={[selectionRange]} onChange={handleSelect} />
       <h3 >
         Number of Guests <PeopleIcon />
       </h3>

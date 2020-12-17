@@ -11,6 +11,31 @@ import Greece from "../Assets/images/Greece.jpeg";
 import Scandinavia from "../Assets/images/Scandinavia.jpg";
 import Goldcoast from "../Assets/images/Goldcoast.jpg";
 
+
+const options = {
+  method: "GET",
+  url: "https://hotels4.p.rapidapi.com/locations/search",
+  params: { query: "new york" , locale: "en_US" },
+  headers: {
+    "x-rapidapi-key": "9f05d26673mshb2c8499547bc2c5p1c9aafjsn197659763efe",
+    "x-rapidapi-host": "hotels4.p.rapidapi.com",
+  },
+};
+
+axios
+  .request(options)
+  .then(function (response) {
+    console.log(response.data);
+    console.log(response.data.suggestions[3].entities);
+    document.querySelector("#card-title")
+   
+  })
+  .catch(function (error) {
+    console.error(error);
+  });
+
+
+
 class SearchResult extends Component {
   constructor(props) {
     super(props);
@@ -29,6 +54,18 @@ class SearchResult extends Component {
       <div className="searchResults">
       Search Results:
       </div>
+      <div class="card" >
+  <div class="card-body">
+    <h5 class="card-title">THE PENINSULA BANGKOK</h5>
+    <img className="picofPlace" alt="" src={Thailand} fluid />
+    <p class="card-text">"All rooms at the Peninsula Bangkok have breathtaking views of the
+            Chao Phraya River and the city beyond. Some rooms offer landscaped
+            balconies where guests can relax and enjoy the stunning views and
+            the river breezes or indulge in an intimate fine dining
+            experience."</p>
+    <a href="https://www.peninsula.com/en/bangkok/5-star-luxury-hotel-riverside" class="btn btn-primary">Go somewhere</a>
+  </div>
+</div>
       {/* <Card style={{ width: "130rem" }}>
         <Card.Body>
           <Card.Title >Search Results</Card.Title>
