@@ -67,7 +67,8 @@ const options = {
   params: {query: 'los angeles', locale: 'en_US'},
   headers: {
     'x-rapidapi-key': '9f05d26673mshb2c8499547bc2c5p1c9aafjsn197659763efe',
-    'x-rapidapi-host': 'tripadvisor1.p.rapidapi.com'
+    'x-rapidapi-host': 'tripadvisor1.p.rapidapi.com',
+    "useQueryString": true
   }
 };
 axios.request(options).then(function (response) {
