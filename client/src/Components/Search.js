@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import './search.css'
+import './Search.css'
 import { DateRangePicker } from "react-date-range";
 import { Button } from "@material-ui/core";
 import PeopleIcon from "@material-ui/icons/People";

@@ -1,5 +1,7 @@
 .navbar {
   background-color:rgb(27, 153, 236);
+  height: 110px;
+  
 }
 
 .nav-item {
@@ -8,10 +10,12 @@
 
 .navbar-brand {
   color: coral;
+  font-size: 50px;
 }
 
 a {
   color: #f00;
+  font-size: 50px;
 }
 a:hover {
   color: #0f0;
@@ -22,4 +26,7 @@ a:hover {
   align-items: center;
   margin-left: 500px;
   width: 100%;
+}
+a.navbar-brand {
+  font-size: 40px;
 }
