@@ -1,4 +1,5 @@
 import "./App.css";
+import aboutUs from "./Components/aboutUs"
 import homeWrapper from "./Components/homeWrapper";
 import SignUp from "./Components/signup";
 import LogIn from "./Components/login";
@@ -14,6 +15,7 @@ function App() {
        <Switch>
       <Route exact path="/searchResult" component={SearchResult}/>
 
+      <Route exact path="/aboutUs" component={aboutUs}/>
      
       <Route exact path="/" component={homeWrapper} />
 

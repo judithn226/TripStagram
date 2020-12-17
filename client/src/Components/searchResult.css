@@ -1,12 +1,27 @@
-.image {
-  display: flex !important;
-  height: 250 px;
-  width: 250 px;
-  overflow: hidden;
-  padding-left: 0px;
+.image{
+    display: flex !important;
+    height: 500 px;
+    width: 250 px;
+    overflow: hidden;
+    padding-left: 0px;
 }
+.card{
+height: 370px;
+width: 500px;
+position: center;
+margin-left: 100px;
+margin-bottom: 15px;
 
-.foundResults {
-  text-align: center;
-  align-content: center;
+}
+.picofPlace{
+    position: left;
+    height: 100px;
+  
+}
+.searchResult{
+    background-color: rgb(243, 241, 241);
+}
+.searchResults{
+    font-size: 50px;
+    margin-bottom: 30px;
 }
