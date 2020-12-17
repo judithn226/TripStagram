@@ -8,11 +8,10 @@ Button {
   width: auto;
   height: 350 px;
 }
-.banner_center{
+.banner_center {
   margin-left: 600px;
   padding-top: 15px;
   padding-bottom: 15px;
- 
 }
 
 .banner_center input {
@@ -20,6 +19,6 @@ Button {
   width: 500px;
 }
 
-.button{
+.button {
   margin-bottom: 500px;
 }
