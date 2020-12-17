@@ -142,20 +142,22 @@ function Banner() {
       
       <div className="banner_search">
         {showSearch && <Search />}
+        <a href = "searchResult">
         <Button class = "button"
-          onclick="href='searchResult';"
+         
          
           className="banner__searchButton"
           variant="outlined">
           {showSearch ? "Hide" : "Start Trippin"}
         </Button>
+        </a>
       
         <div className='banner_center'>
                 <input type="text" 
                 ref={inputField}
                 name = "searchBar"
                 id = "searchBar"
-                placeholder = "Type to search" />
+                placeholder = "Where you wanna trip too?" />
             </div>
       </div>
       {

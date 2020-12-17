@@ -10,7 +10,16 @@ import Carousel from 'react-bootstrap/esm/Carousel';
 import OnlineExperiences from "../Assets/images/Paris.jpg"
 import Rio from "../Assets/images/Rio.jpg"
 import Canada from "../Assets/images/CanadianRockies.jpg"
+import NewYork from "../Assets/images/NewYork.jpg"
+import Mexico from "../Assets/images/mexico.jpg"
+import lasVegas from "../Assets/images/las-vegas-welcome-sign.jpg"
+import disney from "../Assets/images/Disneyland.jpg"
 //import axios from "axios"
+
+import './aboutUs.css';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import {fab, faLinkedin, faGithub} from "@fortawesome/free-brands-svg-icons";
+import { Link } from 'react-router-dom';
 
 
 
@@ -63,9 +72,76 @@ function Home(props) {
                     </Carousel.Item>
                     
                 </Carousel>
-            </Container>            
-            <AboutUs/>
+            </Container>         
+            <h3 className = "extraStuff">    
+                Destinations Travelers Love
+                </h3>   
+
+
+    <div class="row">
+        <div class="col-md-3">
+            {/* <div class="card card-profile card-plain"> */}
+                <div class="card-body">
+                <a href = "https://www.nycgo.com/">
+                <img className="imaage1" src={NewYork} alt="" />  
+                <h4 class="card-title">New York CIty, NY</h4>   
+                </a>            
+                </div>
+                {/* <div class="card-footer justify-content-center">
+                    <a href="https://github.com/victoriablackburn14" class="btn btn-link btn-just-icon" target="_blank"><FontAwesomeIcon icon={faGithub} /></a>
+                   
+                </div> */}
+            {/* </div> */}
         </div>
+        <div class="col-md-3">
+            {/* <div class="card card-profile card-plain"> */}
+                <div class="card-body">
+                    <a href = "https://www.nomadicmatt.com/travel-guides/mexico-travel-tips/">
+                <img className="imaage1" src={Mexico} alt="" /> 
+                    <h4 class="card-title">Mexico</h4>
+                    </a>
+                </div>
+                {/* <div class="card-footer justify-content-center">
+                    <a href="https://github.com/judithn226" class="btn btn-link btn-just-icon" target="_blank"><FontAwesomeIcon icon={faGithub} /></a>
+                    <a href="https://www.linkedin.com/in/judith-nwagwu-19655691/" class="btn btn-link btn-just-icon" target="_blank"><FontAwesomeIcon icon={faLinkedin}/></a>
+                </div> */}
+            {/* </div> */}
+        </div>
+        <div class="col-md-3">
+            {/* <div class="card card-profile card-plain"> */}
+                <div class="card-body">
+                <a href = "https://www.visitlasvegas.com/">
+                <img className="imaage1" src={lasVegas} alt="" /> 
+                    <h4 class="card-title">Las Vegas, NV</h4>
+                    </a>
+                </div>
+                {/* <div class="card-footer justify-content-center">
+                    <a href="https://github.com/usmanjchaudhry/" class="btn btn-link btn-just-icon" target="_blank"><FontAwesomeIcon icon={faGithub} /></a>
+                    <a href="https://www.linkedin.com/in/monika-kakuturu-3446b261/" class="btn btn-link btn-just-icon" target="_blank"><FontAwesomeIcon icon={faLinkedin}/></a>
+                </div> */}
+            {/* </div> */}
+        </div>
+        <div class="col-md-3">
+            {/* <div class="card card-profile card-plain"> */}
+                <div class="card-body">
+                <a href = "https://www.visitorlando.com/en">
+                <img className="imaage1" src={disney} alt="" /> 
+                    <h4 class="card-title" href="google.com">Orlando, FL</h4>
+                    </a>
+                </div>
+                {/* <div class="card-footer justify-content-center">
+                    <a href="https://github.com/monikakakuturu" class="btn btn-link btn-just-icon" target="_blank"><FontAwesomeIcon icon={faGithub} /></a>
+                    <a href="https://www.linkedin.com/in/monika-kakuturu-3446b261/" class="btn btn-link btn-just-icon" target="_blank"><FontAwesomeIcon icon={faLinkedin}/></a>
+                </div> */}
+            {/* </div> */}
+        </div>
+        </div>
+            {/* <AboutUs/> */}
+            <div class="footer">
+  <p>Footer</p>
+</div>
+        </div>
+        
     )
 }
 
