@@ -1,5 +1,6 @@
 {
   "name": "mern-boilerplate",
+  "engines" : { "node" : ">=0.12" } ,
   "version": "1.0.0",
   "description": "",
   "main": "server.js",

@@ -1,0 +1,33 @@
+{
+  "files": {
+    "main.css": "/static/css/main.e823b5c2.chunk.css",
+    "main.js": "/static/js/main.b0fd8ebc.chunk.js",
+    "main.js.map": "/static/js/main.b0fd8ebc.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.9eaa3cfa.js",
+    "runtime-main.js.map": "/static/js/runtime-main.9eaa3cfa.js.map",
+    "static/css/2.f51d7379.chunk.css": "/static/css/2.f51d7379.chunk.css",
+    "static/js/2.42465e42.chunk.js": "/static/js/2.42465e42.chunk.js",
+    "static/js/2.42465e42.chunk.js.map": "/static/js/2.42465e42.chunk.js.map",
+    "static/js/3.410ecdf8.chunk.js": "/static/js/3.410ecdf8.chunk.js",
+    "static/js/3.410ecdf8.chunk.js.map": "/static/js/3.410ecdf8.chunk.js.map",
+    "index.html": "/index.html",
+    "static/css/2.f51d7379.chunk.css.map": "/static/css/2.f51d7379.chunk.css.map",
+    "static/css/main.e823b5c2.chunk.css.map": "/static/css/main.e823b5c2.chunk.css.map",
+    "static/js/2.42465e42.chunk.js.LICENSE.txt": "/static/js/2.42465e42.chunk.js.LICENSE.txt",
+    "static/media/Bali.e96f6333.jpg": "/static/media/Bali.e96f6333.jpg",
+    "static/media/CanadianRockies.cd153198.jpg": "/static/media/CanadianRockies.cd153198.jpg",
+    "static/media/Goldcoast.2b1ab8ab.jpg": "/static/media/Goldcoast.2b1ab8ab.jpg",
+    "static/media/MachuPicchu.492e584d.jpeg": "/static/media/MachuPicchu.492e584d.jpeg",
+    "static/media/Paris.a171a8e3.jpg": "/static/media/Paris.a171a8e3.jpg",
+    "static/media/Rio.4d2ed8cf.jpg": "/static/media/Rio.4d2ed8cf.jpg",
+    "static/media/Scandinavia.655a886c.jpg": "/static/media/Scandinavia.655a886c.jpg",
+    "static/media/Thailand.59782f22.jpeg": "/static/media/Thailand.59782f22.jpeg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.9eaa3cfa.js",
+    "static/css/2.f51d7379.chunk.css",
+    "static/js/2.42465e42.chunk.js",
+    "static/css/main.e823b5c2.chunk.css",
+    "static/js/main.b0fd8ebc.chunk.js"
+  ]
+}
