@@ -1,3 +1,4 @@
+
 import React, { Component } from "react";
 import "./searchResult.css";
 import Header from "./header";
@@ -10,6 +11,9 @@ import BoraBora from "../Assets/images/BoraBora.jpeg";
 import Greece from "../Assets/images/Greece.jpeg";
 import Scandinavia from "../Assets/images/Scandinavia.jpg";
 import Goldcoast from "../Assets/images/Goldcoast.jpg";
+
+
+
 
 
 const options = {
@@ -26,9 +30,8 @@ axios
   .request(options)
   .then(function (response) {
     console.log(response.data);
-    console.log(response.data.suggestions[3].entities);
-    document.querySelector("#card-title")
-   
+    console.log(response.data.suggestions[3].entities[0].name);
+   const x = response.data.suggestions[3].entities[0].name;
   })
   .catch(function (error) {
     console.error(error);
@@ -43,29 +46,18 @@ class SearchResult extends Component {
       searchData: props.searchData,
       data: [],
       hotelData: [],
+      
     }
     
   }
   
   render(){
+    
   return (
+    
     <div className = "searchResult">
       <Header />
-      <div className="searchResults">
-      Search Results:
-      </div>
-      <div class="card" >
-  <div class="card-body">
-    <h5 class="card-title">THE PENINSULA BANGKOK</h5>
-    <img className="picofPlace" alt="" src={Thailand} fluid />
-    <p class="card-text">"All rooms at the Peninsula Bangkok have breathtaking views of the
-            Chao Phraya River and the city beyond. Some rooms offer landscaped
-            balconies where guests can relax and enjoy the stunning views and
-            the river breezes or indulge in an intimate fine dining
-            experience."</p>
-    <a href="https://www.peninsula.com/en/bangkok/5-star-luxury-hotel-riverside" class="btn btn-primary">Go somewhere</a>
-  </div>
-</div>
+      <h1 class = "header">Search Results:</h1>
       {/* <Card style={{ width: "130rem" }}>
         <Card.Body>
           <Card.Title >Search Results</Card.Title>
@@ -218,6 +210,7 @@ class SearchResult extends Component {
         </Card.Body>
       </Card> */}
     </div>
+    
   );
 }
 }
