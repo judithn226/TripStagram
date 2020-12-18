@@ -1,10 +1,69 @@
 .banner_search {
   text-align: center;
+  margin-top: 1px;
+  margin-right: 130px;
+ 
 }
+
 Button {
-  color: mediumorchid;
+  color: black;
+  background-color: rgb(27, 153, 236);
+  height: 82px;
+  width: 110px;
+  outline-color: black;
+
+ 
 }
+
+
 .letgo-block {
   width: auto;
-  height: 350 px;
+  height: 150px;
+  
 }
+.banner_center{
+  margin-top: -561.9px;
+}
+.banner_center {
+  margin-left: 0px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+
+}
+
+.banner_center input {
+  height: 80px;
+  width: 600px;
+  border-color: black;
+  box-shadow: 0px 10px;  
+  margin-top: -200px;
+  font-size: 30px;
+  
+  
+}
+
+
+.button{
+  margin-left: 700px;
+  box-shadow: 5px 8.54px;
+  margin-top: 500px;
+}
+.button1{
+margin-left: 100px;
+  box-shadow: 5px 8.54px;
+  width: 700px;
+  font-size: 30px;
+}
+.banner{
+  margin-top: 50px;
+  margin-bottom: 400px;
+  
+}
+a{
+  font-size: 20px;
+}
+
+.button {
+  margin-bottom: 500px;
+}
+
