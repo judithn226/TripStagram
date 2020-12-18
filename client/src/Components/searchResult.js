@@ -126,7 +126,7 @@ class SearchResult extends Component {
             balconies where guests can relax and enjoy the stunning views and
             the river breezes or indulge in an intimate fine dining
             experience."</p>
-    <a href="https://www.peninsula.com/en/bangkok/5-star-luxury-hotel-riverside" class="btn btn-primary">Go somewhere</a>
+    <a href="https://www.peninsula.com/en/bangkok/5-star-luxury-hotel-riverside" class="btn btn-primary">Book Now</a>
   </div>
 </div>
 
@@ -138,7 +138,7 @@ class SearchResult extends Component {
             Picchu, Inkaterra Machu Picchu Pueblo Hotel is an intimate Andean
             village with terraced hills, waterfalls, stone pathways and 83
             whitewashed adobe casitas tucked away in the cloud forest."</p>
-    <a href="https://www.inkaterra.com/inkaterra/inkaterra-machu-picchu-pueblo-hotel/the-experience/" class="btn btn-primary">Go somewhere</a>
+    <a href="https://www.inkaterra.com/inkaterra/inkaterra-machu-picchu-pueblo-hotel/the-experience/" class="btn btn-primary">Book Now</a>
   </div>
 </div>
 
@@ -151,7 +151,7 @@ class SearchResult extends Component {
             private island - Motu To'opua, our guests experience the longest
             private stretch of soft white sand beaches nestled between the
             soaring backdrop of Mount Otemanu and the mesmerizing lagoon."</p>
-    <a href="https://conradhotels3.hilton.com/en/hotels/french-polynesia/conrad-bora-bora-nui-PPTBNCI/index.html" class="btn btn-primary">Go somewhere</a>
+    <a href="https://conradhotels3.hilton.com/en/hotels/french-polynesia/conrad-bora-bora-nui-PPTBNCI/index.html" class="btn btn-primary">Book Now</a>
   </div>
 </div>
 
@@ -163,7 +163,7 @@ class SearchResult extends Component {
             breathtaking Volcanic backdrop and the mythical Caldera of
             Santorini island in Greece. No wonder it is the favorite choice
             for vacation and honeymoon all over the world."</p>
-    <a href="https://www.astartesuites.gr/en/" class="btn btn-primary">Go somewhere</a>
+    <a href="https://www.astartesuites.gr/en/" class="btn btn-primary">Book Now</a>
   </div>
 </div>
      
@@ -175,7 +175,7 @@ class SearchResult extends Component {
             experience. Whether you are seeking a quiet, soulful soak beneath
             the Northern Lights, a challenging trek across an ancient glacier
             or a day of fly-fishing in plentiful icy rivers. "</p>
-    <a href="https://ionadventure.ioniceland.is/" class="btn btn-primary">Go somewhere</a>
+    <a href="https://ionadventure.ioniceland.is/" class="btn btn-primary">Book Now</a>
   </div>
 </div>
 
